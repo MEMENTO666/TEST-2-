@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2022.05.27</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    #root {
+      width: 100vw;
+      height: 600vh;
+      background-color: #002530;
+      display: flex;
+      /* justify-content: center; */
+      flex-direction: column;
+    }
+
+    #header {
+      width: 100vw;
+      height: 9vh;
+      border: 1px solid #002530;
+      backdrop-filter: blur(15px);
+      /* background-color: #002530; */
+      opacity: 0.9;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: fixed;
+      padding-right: 40px;
+    }
+
+    #menu-ul {
+      list-style: none;
+      color: white;
+      display: flex;
+    }
+
+    #menu-ul>li {
+      cursor: pointer;
+    }
+
+    li {
+      margin: 20px;
+    }
+
+    #text1 {
+      width: 100vw;
+      height: 100vh;
+      /* border: 1px solid white; */
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: white;
+      letter-spacing: 10px;
+      font-size: 8vw;
+      font-weight: bold;
+      padding-left: 10vw;
+    }
+
+    #sideBtn {
+      width: 40px;
+      height: 200px;
+      /* border: 1px solid darkorange; */
+      position: fixed;
+      top: 130px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    #sideBtn div {
+      width: 35px;
+      height: 15px;
+      background-color: white;
+      /* border-radius: 50%; */
+      transform: rotate(-55deg);
+      cursor: pointer;
+    }
+
+    #text2 {
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid white;
+      color: white;
+      display: flex;
+      padding: 40px;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    #text2>div {
+      /* border: 1px solid white; */
+      margin: 20px;
+      letter-spacing: 2px;
+    }
+
+    #left {
+      font-size: 5vw;
+      width: 40vw;
+      height: 60vh;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 20px;
+      justify-content: space-around;
+
+    }
+
+    #right {
+      width: 30vw;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+    }
+
+    #left-ul {
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      list-style: circle;
+      padding-left: 30px;
+    }
+
+    #right {
+      background-image: url(./profile.png);
+      background-size: cover;
+      
+    }
+
+    #text3 {
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid white;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div id="header">
+      <ul id="menu-ul">
+        <li id="home">HOME</li>
+        <li>ABOUT</li>
+        <li>MENU</li>
+        <li>MENU</li>
+      </ul>
+    </div>
+    <div id="text1">
+      <p>WELCOME TO <span style="color:#F13582">MY</span> PLACE</p>
+    </div>
+    <div id="sideBtn">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="text2">
+      <div id="left">
+        <p>ABOUT</p>
+        <ul id="left-ul">
+          <li>NAME : ? ? ?</li>
+          <li>CHARACTER : <br>난폭,말괄량,깨방정</li>
+          <li>HOBBY : 수면</li>
+          <li>GOOD AT : </li>
+        </ul>
+      </div>
+      <div id="right"></div>
+    </div>
+    <div id="text3"></div>
+  </div>
+
+  <script>
+    const home = document.getElementById("home");
+    const sideBtn = document.getElementById("sideBtn");
+
+    home.addEventListener("click", function () {
+      scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    })
+    
+
+  </script>
+
+</body>
+
+</html>

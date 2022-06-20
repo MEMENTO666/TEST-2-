@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button>STOP</button>
+  <script>
+    const button = document.getElementById("button");
+
+    let num=0;
+    let timer = setInterval(function (){
+      console.log(num++);
+      
+    },700)
+    
+    button.addEventListener ("click",function (){
+      clearInterval(timer);
+      
+  })
+  
+ 
+  </script>
+</body>
+</html>
