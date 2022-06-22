@@ -17,6 +17,5 @@ let timerA = setTimeout(() => {
   
   },000);
 }, 1000);
-// console.log(section());
 
 //todo 딜레이를 0으로 조정해도 section이 먼저 실행됨.
